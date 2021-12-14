@@ -6,31 +6,24 @@
 
 /* Header - End */
 
-
-
-
 /* Prevent Default body style */
-body{
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+body {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 /* Prevent Default body style End */
 
-
-
-
 /* Main-Content-Body-Div-Start */
-#mainbodydiv{
-    background-color: #EEF6FA;
-    padding-top: 20px;
-    width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
+#mainbodydiv {
+  background-color: #eef6fa;
+  padding-top: 20px;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 /* Main-Content-Body-Div-end */
-
 
 /* Content div start */
 
@@ -42,7 +35,7 @@ body{
   padding-top: 20px;
   /* padding-bottom: 20px; */
   margin-bottom: 20px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 /* Heading-Start */
@@ -59,9 +52,6 @@ h1 {
 }
 
 /* Heading-End */
-
-
-
 
 /* Small Category box start */
 #category {
@@ -114,36 +104,70 @@ h1 {
 
 /* Small Category box End */
 
-
-
-
 /* Add Section Start */
 
-#addiv{
-    height: 400px;
-    width: 1048px;
-    border: none;
-    margin: auto;
-    display: grid;
-    grid-template: 100% /  670px 362px;
-    justify-content: space-between;
+#addiv {
+  height: 400px;
+  width: 1048px;
+  border: none;
+  margin: auto;
+  display: grid;
+  grid-template: 100% / 670px 362px;
+  justify-content: space-between;
+  margin-bottom: 51px;
 }
 
-#addiv>div{
-    border: 1px solid transparent;
+#addiv > div {
+  border: 1px solid transparent;
 }
 
-#addiv>div:nth-child(2){
-    display: grid;
-    grid-template: 191px 191px / 100%;
-    align-content: space-between;
+#addiv > div:nth-child(2) {
+  display: grid;
+  grid-template: 191px 191px / 100%;
+  align-content: space-between;
 }
 
-#addiv>div:nth-child(2)>div{
-    border: 1px solid transparent;
+#addiv > div:nth-child(2) > div {
+  border: 1px solid transparent;
 }
 
 /* Add Section End */
+
+/* Trending box start */
+#trendingbox {
+  height: 37px;
+  border: 1px solid transparent;
+  display: grid;
+  grid-template: 32px 5px / 240px;
+  justify-content: center;
+  margin-bottom: 21px;
+}
+
+#trendingbox > div {
+  border: none;
+}
+
+#trendingbox > div:nth-child(1) {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+#trendingbox > div:nth-child(1) > p {
+  margin-top: 0px;
+}
+
+#trendingbox > div:nth-child(2) {
+  display: grid;
+  grid-template: 100% / 70px;
+  justify-content: center;
+}
+
+#trendingbox > div:nth-child(2) > div {
+  background-color: black;
+}
+
+/* Trending box end */
 
 
 
