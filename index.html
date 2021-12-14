@@ -57,7 +57,7 @@
             height: 30px;
             margin-top: 5px;
             display: flex;
-            /* justify-content: space-around; */
+            justify-content: space-between;
             align-items: center;
             padding: 5px;
         }
@@ -131,6 +131,13 @@
         justify-content: space-around;
     
     }
+    .fa-customize{
+        font-size: 27px;
+        padding-top: 7px;
+    }
+    #right{
+        justify-content: space-around;
+    }
 
     </style>
 </head>
@@ -158,13 +165,25 @@
                 <!-- <input type="submit"> -->
                 <button>Search</button>
             </div>
-            <div id="right" style="border:1px solid blue;width: 400px;height: 31px;">
+            <div id="right" style="border:1px solid blue;width: 400px;height: 31px;" class="flex">
                 <div style="border: 1px dashed red; width: 80px;height: 100%;" class="flex map-logo-share">
                     <div class="align map-logo ">
                         <p class="small2 bold">Share</p>
                         <p class="small2">Location</p>
                     </div>
                     <i id="maplogo" class="fas fa-map-marker-alt fa-lg"></i>
+                </div>
+                <div >
+                    <i class="far fa-bell fa-customize"></i>
+                </div>
+                <div>
+                    <i class="far fa-heart fa-customize"></i>
+                </div>
+                <div>
+                    <i class="fas fa-shopping-cart fa-customize"></i>
+                </div>
+                <div>
+                    <h4 class="align" style="border:1px solid black;margin: 7px;">Sign In</h4>
                 </div>
 
             </div>
