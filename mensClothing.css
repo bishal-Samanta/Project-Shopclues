@@ -29,13 +29,14 @@
   
   #bodyDiv {
     width: 1240px;
-    border: 1px solid red;
+    border: 1px solid transparent;
     margin: auto;
     margin-top: 27px;
     padding-top: 20px;
     /* padding-bottom: 20px; */
     margin-bottom: 20px;
     background-color: #ffffff;
+    border-radius: 8px;
   }
   
   /* Heading-Start */
@@ -67,7 +68,7 @@
   }
   
   #category > div {
-    border: 1px solid black;
+    border: 1px solid transparent;
     display: grid;
     grid-template: 80px 20px / 100%;
   }
@@ -307,11 +308,11 @@
   /* Shop by price head start */
 
   #shopbypricehead{
-      border: 1px solid black;
+      border: 1px solid transparent;
   }
 
   #shopbypricehead>div{
-      border: 1px solid red;
+      border: 1px solid transparent;
   }
 
   #shopbypricehead>div:nth-child(1){
@@ -323,10 +324,10 @@
 
   /* Shop by price body :start */
 
-  #shopbypricebody{
+  .shopbypricebody{
     height: 95px;
     width: 1048px;
-    border: 1px solid black;
+    border: 1px solid transparent;
     margin: auto;
     margin-bottom: 50px;
     display: grid;
@@ -334,16 +335,16 @@
     justify-content: space-between;
   }
 
-  #shopbypricebody>div{
-    border: 1px solid red;
+  .shopbypricebody>div{
+    border: 1px solid grey;
     display: grid;
     grid-template: 45px / 245px;
     justify-content: center;
     align-content: center;
   }
 
-  #shopbypricebody>div>div{
-      border: 1px solid red;
+  .shopbypricebody>div>div{
+      border: 1px solid transparent;
       -webkit-filter: invert(100%); /* Safari/Chrome */
       filter: invert(100%);
       border: none;
@@ -351,6 +352,83 @@
 
 
    /* Shop by price body :end */
+
+  /* Shop by discount head start*/
+
+  #shopbydishead{
+      border: 1px solid transparent;
+  }
+
+  #shopbydishead>div:nth-child(1){
+      border: 1px solid transparent;
+      padding-left: 15px;
+  }
+  
+
+  /* Shop by discount head end*/
+
+  /* shop by occasion head start */
+
+  #shopbyoccation{
+      border: 1px solid transparent;
+  }
+
+  #shopbyoccation>div{
+      border: 1px solid transparent;
+      padding-left: 12px;
+  }
+
+   /* shop by occasion head end */
+
+    /* shop by occasion body start */
+  
+    #occationbiody{
+        height: 332px;
+        width: 1048px;
+        margin: auto;
+        border: 1px solid transparent;
+        display: grid;
+        grid-template: 100% / repeat(4,250px);
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    #occationbiody>div{
+        border: 1px solid transparent;
+        display: grid;
+        grid-template: 264px 35px 32px / 100%;
+
+    }
+
+    #occationbiody>div>div{
+        border: 1px solid transparent;
+    }
+
+    #occationbiody>div>div:nth-child(2){
+        color: #000101;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        margin: auto;    
+    }
+
+    #occationbiody>div>div:nth-child(3){
+
+        color: #000101;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        margin: auto;  
+        font-weight: 400;
+
+    }
+
+
+
+     /* shop by occasion body end */
+
+
+
+
   
   
   /* Content div end */
