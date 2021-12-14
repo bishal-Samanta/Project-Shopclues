@@ -1,20 +1,48 @@
 /* Header - Start */
 #header {
   height: 155px;
-  border: 1px solid red;
+  border: none;
 }
 
 /* Header - End */
 
-/* Body Start */
+
+
+
+/* Prevent Default body style */
+body{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/* Prevent Default body style End */
+
+
+
+
+/* Main-Content-Body-Div-Start */
+#mainbodydiv{
+    background-color: #EEF6FA;
+    padding-top: 20px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+/* Main-Content-Body-Div-end */
+
+
+/* Content div start */
+
 #bodyDiv {
   width: 1240px;
   border: 1px solid red;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 27px;
   padding-top: 20px;
   /* padding-bottom: 20px; */
   margin-bottom: 20px;
+  background-color: #FFFFFF;
 }
 
 /* Heading-Start */
@@ -31,6 +59,9 @@ h1 {
 }
 
 /* Heading-End */
+
+
+
 
 /* Small Category box start */
 #category {
@@ -83,6 +114,9 @@ h1 {
 
 /* Small Category box End */
 
+
+
+
 /* Add Section Start */
 
 #addiv{
@@ -110,3 +144,11 @@ h1 {
 }
 
 /* Add Section End */
+
+
+
+
+
+
+
+/* Content div end */
