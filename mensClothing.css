@@ -86,7 +86,7 @@ h1 {
 
 #category > div > div:nth-child(2) {
   border: 1px solid transparent;
-  margin-top: 1px;
+  margin-top: 6px;
   color: #555;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -169,6 +169,47 @@ h1 {
 
 /* Trending box end */
 
+
+/* Trending brand body start */
+#trendingbody{
+    height: 708px;
+    width: 1048px;
+    border: none;
+    margin: auto;
+    display: grid;
+    grid-template: 341px 341px / repeat(4,250px);
+    justify-content: space-between;
+    align-content: space-between;
+    margin-bottom: 50px;
+}
+
+#trendingbody>div{
+    border: none;
+    display: grid;
+    grid-template: 306px 33px / 100% ;
+    
+}
+
+#trendingbody>div>div{
+    border: none;
+}
+
+#trendingbody>div>div:nth-child(2){
+    display: grid;
+    grid-template: 100% / 140px;
+    justify-content: center;
+}
+#trendingbody>div>div:nth-child(2)>div{
+    border: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: auto;
+    padding-top: 5px;
+    color: #000101;
+}
+
+
+/* Trending brand body end */
 
 
 
