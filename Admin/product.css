@@ -1,0 +1,241 @@
+/* Header - Start */
+#header {
+    height: 155px;
+    border: 1px solid transparent;
+  }
+  
+  /* Header - End */
+
+  
+/* Prevent Default body style */
+body {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  
+  /* Prevent Default body style End */
+
+  /* Main-Content-Body-Div-Start */
+#mainbodydiv {
+    background-color: #eef6fa;
+    padding-top: 50px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    
+  }
+  /* Main-Content-Body-Div-end */
+
+
+  /* basic layouit */
+  #maincontainerdiv{
+    width: 1480px;
+    border: 1px solid transparent;
+    margin: auto;
+    background-color: white;
+    display: grid;
+    grid-template: 100% / 230px 17px 1234px;
+
+  }
+
+  #maincontainerdiv>div{
+      border: 1px solid transparent;
+  }
+
+  #maincontainerdiv>div:nth-child(2){
+      background-color: #EFF6FB;
+  }
+
+  #maincontainerdiv >div:nth-child(1){
+    border-radius: 7px;
+    border: 1px solid transparent;
+  }
+  #maincontainerdiv >div:nth-child(3){
+    border-radius: 7px;
+    border: 1px solid transparent;
+    padding-bottom: 0px;
+      
+}
+
+  /* basic layouit  end */
+
+
+  /* Heading-Start */
+.pageHeading {
+    padding-right: 20px;
+    padding-left: 21px;
+    height: 58px;
+    border: 1px solid transparent;
+  }
+  h1 {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #212121;
+    border: 1px solid transparent;
+    margin-top: 20px;
+    font-weight: 500;
+  }
+  
+  /* Heading-End */
+
+  /* Next blank div */
+  #productcountdiv{
+      height: 70px;
+      width: 100%;
+      border: 1px solid transparent;
+      margin-bottom: 12px;
+  }
+
+  /* Main add product div */
+
+  #jsproduct{
+      display: grid;
+      grid-template: 510px / repeat(4,300px);
+      justify-content: space-between;
+  }
+  #jsproduct > div{
+      border: 1px solid transparent;
+      display: grid;
+      grid-template: 33px 456px / 274px;
+      justify-content: center;
+      align-content: center;
+  }
+
+  #jsproduct > div>div{
+      border: 1px solid transparent;
+  }
+
+  #prod{
+      display: grid;
+      grid-template: 292px 20px 20px 20px 18px 18px / 100%;
+      row-gap: 5px;
+      column-gap: 30px;
+  }
+
+  #prod>div{
+      border: 1px solid transparent
+      /* background-color: black; */
+  }
+
+  /* image */
+  #prod>div:nth-child(1)>div{
+      height: 280px;
+      width: 150px;
+      border: 1px solid transparent;
+      margin: auto;
+  }
+
+  .allImage{
+      height: 100%;
+      width: 100%;
+  }
+
+  /* Name */
+  #prod>div:nth-child(2){
+      font-family: "Roboto", Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #555;
+  }
+
+  /* Price and dis */
+
+  #prod>div:nth-child(3){
+      display: grid;
+      grid-template: 100% / 53px 60px;
+      column-gap: 10px;
+  }
+
+  #prod>div:nth-child(3)>div{
+      border: 1px solid transparent;
+  }
+
+  #prod>div:nth-child(3)>div:nth-child(1){
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ff7a55;
+    
+  }
+  
+  #prod>div:nth-child(3)>div:nth-child(2){
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #25A3B4;
+  }
+
+  /* Mrp */
+
+  #prod>div:nth-child(4){
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #757474;
+    text-decoration: line-through;
+  }
+
+  /* Final div  with hover effect */
+
+  #prod>div:nth-child(7){
+      display: none;
+      grid-template: 20px 20px / 100%;
+  }
+  #prod>div:nth-child(7)>div{
+      border: 1px solid transparent;
+      font-size: 12px;
+      color: #757575;
+      
+
+  }
+
+  #prod:hover > div:nth-child(7){
+    display: grid;
+  }
+
+  #jsproduct>div:hover{
+      border: 1px solid #25A3B4;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+
+
+
+  /* Star box */
+  .checked {
+    color: orange;
+  }
+  
+  #prod>div:nth-child(6){
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #757474;
+  }
+
+  /* Heart */
+  #heart{
+      font-size: 150%;
+      color: #555555;
+      
+  }
+
+  #jsproduct>div>div:nth-child(1){
+      display: flex;
+      flex-direction: row-reverse;
+      padding-right: 6px;
+  }
+
+  #heart:hover{
+      color: red;
+  }
+
+
+
+
+
+
+
+
+  
