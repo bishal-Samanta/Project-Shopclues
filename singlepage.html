@@ -14,18 +14,21 @@
                 <!-- <img src="https://rukminim1.flixcart.com/image/880/1056/kcz4rrk0/t-shirt/e/x/t/l-1-harbornbay-original-imaftzmum2hfgfah.jpeg?q=50" alt="" id="imgTop"> -->
                 <div class="topImageDiv">
                     <img src="" alt="" id="topImage">
-                    <div class="small-img-row">
-                        <div class="small-img-col">
-                            <!-- <img src="" alt=""> -->
-                        </div>
-                        <div class="small-img-col">
-                            <!-- <img src="" alt=""> -->
-                        </div>
-                        <div class="small-img-col">
-                            <!-- <img src="" alt=""> -->
-                        </div>
+          
+                </div>
+               <div class="bottomImageDiv">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="" alt=""  id="topImage1" width="100%">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="" alt="" id="topImage2" width="100%">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="" alt="" id="topImage3">
                     </div>
                 </div>
+               </div>
             </div>
         </div>
             
@@ -51,6 +54,12 @@ data.map(function(elem){
     // var image = document.createElement("img");
     var image1 = document.querySelector("#topImage")
     image1.setAttribute("src",elem.imgURL);
-    document.querySelector(".topImageDiv").append(image)
+    // document.querySelector(".topImageDiv").append(image)
+    // document.querySelector(".small-img-col").append(image)
+    var image_bot_1 = document.querySelector("#topImage1")
+    image_bot_1.setAttribute("src","https://cdn.shopclues.com/images1/thumbnails/113305/280/1/152033956-113305412-1614277708.jpg")
+    var image_bot_2 = document.querySelector("#topImage2")
+    image_bot_2.setAttribute("src","https://cdn.shopclues.com/images/thumbnails/48259/280/1/LB000111479720934.jpg")
+    
 })
 </script>

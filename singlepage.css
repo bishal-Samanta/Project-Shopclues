@@ -38,6 +38,20 @@ body{
     padding-left: 45px ;
     height: 100%;
 }
+.bottomImageDiv{
+    /* border: 1px solid red; */
+    width: 100%;
+}
+.small-img-row{
+    border: 1px dashed blue;
+    width: 100%;
+    display: flex;
+    
+}
+.small-img-col{
+    flex-basis: 10%;
+}
+    
 
     
 
