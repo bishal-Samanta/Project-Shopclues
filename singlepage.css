@@ -65,7 +65,7 @@ body{
 }
 /* RIGHT DIV WORK */
 .rightDiv{
-    margin-top: 30px;
+    margin-top: 35px;
     border: 1px solid darkblue;
     width: 100%;
     height: 100px;
@@ -86,9 +86,30 @@ body{
     text-decoration: underline;
     cursor: pointer;
 }
-
-
+.rosybrown_color{
+    color: #b69183;
+}
+.darkorange_color{
+    color:#fb760b
+}
+.starlineSize{
+    font-weight: bold;
+}
     
+/* Middle Div */
+
+.middleDiv{
+    border:1px dashed teal;
+    margin-top: 25px;
+}
+.box1P1{
+    font-size: large;
+    padding: 0px;
+}    
+span{
+    font-size: small;
+}             
+
     
 
     
