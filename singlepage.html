@@ -12,7 +12,20 @@
         <div class="wholeDiv">
             <div class="leftDiv">
                 <!-- <img src="https://rukminim1.flixcart.com/image/880/1056/kcz4rrk0/t-shirt/e/x/t/l-1-harbornbay-original-imaftzmum2hfgfah.jpeg?q=50" alt="" id="imgTop"> -->
-                <!-- <img src="" alt=""> -->
+                <div class="topImageDiv">
+                    <img src="" alt="" id="topImage">
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <!-- <img src="" alt=""> -->
+                        </div>
+                        <div class="small-img-col">
+                            <!-- <img src="" alt=""> -->
+                        </div>
+                        <div class="small-img-col">
+                            <!-- <img src="" alt=""> -->
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
             
@@ -35,8 +48,9 @@
     }
 ]
 data.map(function(elem){
-    var image = document.createElement("img");
-    image.setAttribute("src",elem.imgURL);
-    document.querySelector(".leftDiv").append(image)
+    // var image = document.createElement("img");
+    var image1 = document.querySelector("#topImage")
+    image1.setAttribute("src",elem.imgURL);
+    document.querySelector(".topImageDiv").append(image)
 })
 </script>

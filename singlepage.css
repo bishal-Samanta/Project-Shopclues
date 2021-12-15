@@ -26,7 +26,20 @@ body{
     background-color: green;
     height: 320px;
     width: 45%;
+    
 }
+.topImageDiv{
+    height: 100%;
+    /* padding: 10px 55px;  */
+    width: 100%;
+    justify-content: center;
+}
+#topImage{
+    padding-left: 45px ;
+    height: 100%;
+}
+
+    
 
     
     
