@@ -1,0 +1,35 @@
+body{
+    margin-top: 130px;
+}
+
+#wholeDiv-border{
+    
+    border: 1px solid red;
+    width: 95%;
+    /* height: 900px; */
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,40%) 200px;
+    grid-template-rows: 500px;
+    grid-gap: 20px;
+    /* padding: 30px; */
+    /* justify-content: space-around; */
+}
+#wholeDiv-border>.wholeDiv{
+    /* background-color: blue; */
+    border: 1px solid blue;
+    /* justify-content: center; */
+}
+.leftDiv{
+    margin: auto;
+    margin-top: 40px;
+    background-color: green;
+    height: 320px;
+    width: 45%;
+}
+
+    
+    
+
+    
+

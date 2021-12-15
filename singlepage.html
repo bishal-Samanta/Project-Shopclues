@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="singlepage.css">
+</head>
+<body>
+    <div id="wholeDiv-border">
+        <div class="wholeDiv">
+            <div class="leftDiv">
+                <!-- <img src="https://rukminim1.flixcart.com/image/880/1056/kcz4rrk0/t-shirt/e/x/t/l-1-harbornbay-original-imaftzmum2hfgfah.jpeg?q=50" alt="" id="imgTop"> -->
+                <!-- <img src="" alt=""> -->
+            </div>
+        </div>
+            
+        <div class="wholeDiv"></div>
+        <div class="wholeDiv"></div>
+    </div>
+    
+</body>
+</html>
+<script>
+    data = [
+    {
+        name: "Solid Polo Classy Tshirt For Men",
+        imgURL: "https://cdn.shopclues.com/images1/thumbnails/109145/280/1/150573840-109145405-1597763799.jpg",
+        mrp: "₹499",
+        discount: "50%",
+        color_family: "orange",
+        brand: "Polo",
+        size: 'S',
+    }
+]
+data.map(function(elem){
+    var image = document.createElement("img");
+    image.setAttribute("src",elem.imgURL);
+    document.querySelector(".leftDiv").append(image)
+})
+</script>
