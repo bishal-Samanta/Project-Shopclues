@@ -1,5 +1,5 @@
 body{
-    margin-top: 130px;
+    margin-top: 100px;
 }
 *{
     font-family: 'Roboto', sans-serif;
@@ -101,16 +101,56 @@ body{
 .middleDiv{
     border:1px dashed teal;
     margin-top: 25px;
+    line-height: 5px;
 }
 .box1P1{
     font-size: large;
-    padding: 0px;
+    /* padding: 4px; */
+    border: 1px solid red;;
 }    
 span{
+   
     font-size: small;
+    line-height: 28px;
 }             
-
+.price{
+    font-size: x-large ;
+    /* font-weight: 540; */
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     
+}
+.price::before{
+    content: "₹";
+}
+.remPrice{
+    text-decoration: line-through;
+    /* font-weight: 550; */
+}
+span{
+    padding-left: 4px;
+}
+.off_size{
+    font-size: large;
+    color: #25a3b5;
+}   
+#DealPrice{
+    color: #ff7a5a;
+}
+#Brand{
+    color: #78acbf;
+}
+#ProductID{
+    color: #837e8b;
+}
+.StaticReview{
+    color: #78acbf;
+  
+}
+.StaticReview:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 
     
 
