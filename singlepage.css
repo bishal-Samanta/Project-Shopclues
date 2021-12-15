@@ -35,7 +35,7 @@ body{
     justify-content: center;
 }
 #topImage{
-    padding-left: 45px ;
+    /* padding-left: 45px ; */
     height: 100%;
 }
 .bottomImageDiv{
