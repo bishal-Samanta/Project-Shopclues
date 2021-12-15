@@ -150,7 +150,44 @@ span{
     text-decoration: underline;
     cursor: pointer;
 }
-
+.box2{
+    /* border: 1px solid red; */
+    width: 70%;
+    height: 140px;
+}
+.box2-aboveTable{
+    width: 100%;
+    /* border: red 1px dashed; */
+    background-color: #e2f7f8;
+    display: inline-flex;
+    justify-content: space-between;
+    height: 35px;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.verysmall{
+    font-size: xx-small;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    height: 105px;
+    border-radius: 5px;
+}
+td{
+    font-size: x-small;
+    height: 30px;
+    line-height: 14px;
+}
+.td_last_row_size{
+    font-size: 15px;
+}
+.box3{
+    margin-top: 10px;
+    border:1px solid blue;
+}
 
     
 
