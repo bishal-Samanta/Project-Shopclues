@@ -22,6 +22,7 @@ body {
   width: 100%;
   margin-left: 0px;
   margin-right: 0px;
+  padding-bottom: 20px;
 }
 /* Main-Content-Body-Div-end */
 
@@ -504,5 +505,32 @@ h1 {
 }
 
 /* Trending page body 2 end */
+
+/* Trending page body 3 start */
+
+#trendbody3 {
+  border: 1px solid transparent;
+  height: 330px;
+  width: 1048px;
+  margin: auto;
+  display: grid;
+  grid-template: 100% / 330px 720px;
+  margin-bottom: 50px;
+}
+#trendbody3 > div {
+  border: 1px solid transparent;
+}
+
+#trendbody3 > div:nth-child(1) {
+  display: grid;
+  grid-template: 270px / 100%;
+  align-content: center;
+}
+
+#trendbody3 > div:nth-child(1) > div {
+  border: 1px solid transparent;
+}
+
+/* Trending page body 3 end*/
 
 /* Content div end */
