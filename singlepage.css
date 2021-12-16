@@ -245,7 +245,7 @@ div>ul>li{
     /* height: 10px; */
     line-height: 2px;
     margin-top: 3px;
-    margin-left: 5px;
+    /* margin-left: 5px; */
 }  
 .GetUse>p:nth-child(1){
     font-size: 13px;
@@ -254,6 +254,99 @@ div>ul>li{
     font-size: 11px;
     color: #7b99c0;
 }
+/* .box6>.Colorbox+span{
+    margin-top: 50px;
+} */
+.box6>.Colorbox{
+    background-color: orange;
+    width: 15px;
+    height: 15px;
+    border: 2px solid darkorange;
+    /* margin-left: 5px; */
+}
+.box6>.Colorbox:hover{
+    cursor: pointer;
+}
+.box6>span{
+    font-size: 14px;
+    
+}
+.size4Box{
+    display: inline-flex;
+    /* margin-left: 5px; */
+}
+.size4Box>div{
+    border: 1px solid #e1e1e1;
+    padding: 1px 15px;
+    font-size: smaller;
+    margin-right: 15px;
+}  
+.box7{
+    /* border: 1px solid red; */
+    margin-top: 25px;
+    height: 50px;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+} 
+.box7>button{
+    width: 200px;
+    border-radius: 3px;
+    border: 1px solid #ff924c;
+    outline: none;
+    font-size: large;
+}
+.box7>button:nth-child(2){
+    background: linear-gradient(to right, #ff924c, #ff655f);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.box7>button:nth-child(1){
+    background-color: white;
+    color: #ff924c;
+}
+.box8{
+    margin-top: 25px;
+    /* border: 1px solid red; */
+    width: 53%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.enterpincode{
+    
+    /* margin-top: 20px; */
+    background-color: white;
+    display: inline-flex;
+    height: 34px;
+    padding-left: 8px;
+    border: 1px solid #e1e1e1;
+    /* border: 1px solid blue; */
+}
+#DeliveryPincode{
+    outline: none;
+    height: 32px;
+    border:none
+} 
+.box8>.checkbutton>button{
+    height: 34px;
+    padding: 2px 20px;
+    border:1px solid #6ea7b5;
+    border-radius: 5px;
+    color: #6ea7b5;
+    background-color: white;
+}
+.box9{
+    display: inline-flex;
+}
+.box9>p{
+    font-size: 12px;
+    margin-right: 20px;
+    color: #24a3b5;
+}
+.box9>p>b{
+    color: #24a3b5;
+}
 
     
-
+   
