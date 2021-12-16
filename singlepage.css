@@ -188,11 +188,72 @@ td{
     margin-top: 10px;
     border:1px solid blue;
 }
-
-    
-
-    
-    
+.JoinNow{
+    color: #6ea7b5;
+}
+.JoinNow:hover{
+    text-decoration: underline;
+}
+.VIP_Club_color{
+    color: #25a3b5;
+    cursor: pointer;
+}
+.box4{
+    margin-top: 2px;
+    /* border: 1px solid red; */
+    height: 20px;
+    width: 70%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div>ul>li{
+    font-size: 14px;
+    color: #7b99c0;
+}
+.box4_div1{
+    padding-left: 0px;
+}
+.offers3{
+    font-size: 16px;
+}
+.box5_div1{
+    /* display: inline-flex; */
+    border: red 1px solid;
+    justify-content: space-evenly;
+}
+.More2{
+    /* border: 1px solid red; */
+    margin-left: 20px;
+    font-size: 13px;
+    color: #6ea7b5;
+}
+.More2:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}    
+.PREPAID20{
+    border: 1px dashed #6ea7b5;
+    background-color: #e9f6f7;
+    width: 90px;
+    padding: 3px;
+    text-align: center;
+    font-size: 13px;
+} 
+.GetUse{
+    /* border: 1px solid blue; */
+    /* height: 10px; */
+    line-height: 2px;
+    margin-top: 3px;
+    margin-left: 5px;
+}  
+.GetUse>p:nth-child(1){
+    font-size: 13px;
+}
+.GetUse>p:nth-child(2){
+    font-size: 11px;
+    color: #7b99c0;
+}
 
     
 
