@@ -213,6 +213,197 @@ function dismore70() {
   }
 }
 
+//Filter based on brand HRX
+
+document.querySelector("#hrx").addEventListener("change", hrxfun);
+
+function hrxfun() {
+  if (this.checked) {
+    var storearrbrand1 = arrofobj.filter(function (el) {
+      if (el.brand == "HRX") {
+        return el;
+      }
+    });
+    storearrbrand1.sort(function (a, b) {
+      return b.discount - a.discount;
+    });
+    displayUi(storearrbrand1);
+  } else {
+    arrofobj = JSON.parse(localStorage.getItem("lsproductdetails"));
+    displayUi(arrofobj);
+  }
+}
+
+//Filter based on brand WROGN
+
+document.querySelector("#wrogn").addEventListener("change", wrognfun);
+
+function wrognfun() {
+  if (this.checked) {
+    var storearrbrand2 = arrofobj.filter(function (el) {
+      if (el.brand == "WROGN") {
+        return el;
+      }
+    });
+    storearrbrand2.sort(function (a, b) {
+      return b.discount - a.discount;
+    });
+    displayUi(storearrbrand2);
+  } else {
+    arrofobj = JSON.parse(localStorage.getItem("lsproductdetails"));
+    displayUi(arrofobj);
+  }
+}
+
+//Filter Moda Rapido
+//modarapido
+document.querySelector("#modarapido").addEventListener("change", modarapidofun);
+
+function modarapidofun() {
+  if (this.checked) {
+    var storearrbrand3 = arrofobj.filter(function (el) {
+      if (el.brand == "Moda Rapido") {
+        return el;
+      }
+    });
+    storearrbrand3.sort(function (a, b) {
+      return b.discount - a.discount;
+    });
+    displayUi(storearrbrand3);
+  } else {
+    arrofobj = JSON.parse(localStorage.getItem("lsproductdetails"));
+    displayUi(arrofobj);
+  }
+}
+
+//Filter Here & Now
+//here&now
+
+document.querySelector("#herenow").addEventListener("change", herenowfun);
+
+function herenowfun() {
+  if (this.checked) {
+    var storearrbrand4 = arrofobj.filter(function (el) {
+      if (el.brand == "HERE & NOW") {
+        return el;
+      }
+    });
+    storearrbrand4.sort(function (a, b) {
+      return b.discount - a.discount;
+    });
+    displayUi(storearrbrand4);
+  } else {
+    arrofobj = JSON.parse(localStorage.getItem("lsproductdetails"));
+    displayUi(arrofobj);
+  }
+}
+
+//Filter Roadster
+//roadster
+
+document.querySelector("#roadster").addEventListener("change", roadsterfun);
+
+function roadsterfun() {
+  if (this.checked) {
+    var storearrbrand5 = arrofobj.filter(function (el) {
+      if (el.brand == "Roadster") {
+        return el;
+      }
+    });
+    storearrbrand5.sort(function (a, b) {
+      return b.discount - a.discount;
+    });
+    displayUi(storearrbrand5);
+  } else {
+    arrofobj = JSON.parse(localStorage.getItem("lsproductdetails"));
+    displayUi(arrofobj);
+  }
+}
+
+//Filter by size
+//sizes
+
+document.querySelector("#sizes").addEventListener("change", sizesfun);
+
+function sizesfun() {
+  if (this.checked) {
+    var storearrsize1 = arrofobj.filter(function (el) {
+      if (el.size == "S") {
+        return el;
+      }
+    });
+    storearrsize1.sort(function (a, b) {
+      return b.discount - a.discount;
+    });
+    displayUi(storearrsize1);
+  } else {
+    arrofobj = JSON.parse(localStorage.getItem("lsproductdetails"));
+    displayUi(arrofobj);
+  }
+}
+
+//sizem
+
+document.querySelector("#sizem").addEventListener("change", sizemfun);
+
+function sizemfun() {
+  if (this.checked) {
+    var storearrsize2 = arrofobj.filter(function (el) {
+      if (el.size == "M") {
+        return el;
+      }
+    });
+    storearrsize2.sort(function (a, b) {
+      return b.discount - a.discount;
+    });
+    displayUi(storearrsize2);
+  } else {
+    arrofobj = JSON.parse(localStorage.getItem("lsproductdetails"));
+    displayUi(arrofobj);
+  }
+}
+
+//sizel
+
+document.querySelector("#sizel").addEventListener("change", sizelfun);
+
+function sizelfun() {
+  if (this.checked) {
+    var storearrsize3 = arrofobj.filter(function (el) {
+      if (el.size == "L") {
+        return el;
+      }
+    });
+    storearrsize3.sort(function (a, b) {
+      return b.discount - a.discount;
+    });
+    displayUi(storearrsize3);
+  } else {
+    arrofobj = JSON.parse(localStorage.getItem("lsproductdetails"));
+    displayUi(arrofobj);
+  }
+}
+
+//Size xl
+document.querySelector("#sizexl").addEventListener("change", sizexlfun);
+
+function sizexlfun() {
+  if (this.checked) {
+    var storearrsize4 = arrofobj.filter(function (el) {
+      if (el.size == "XL") {
+        return el;
+      }
+    });
+    storearrsize4.sort(function (a, b) {
+      return b.discount - a.discount;
+    });
+    displayUi(storearrsize4);
+  } else {
+    arrofobj = JSON.parse(localStorage.getItem("lsproductdetails"));
+    displayUi(arrofobj);
+  }
+}
+
 function displayUi(arrofobj) {
   document.querySelector("#jsproduct").innerHTML = "";
   arrofobj.map(function (el, i) {
