@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background-color: aqua;
+        font-size: large;
+      }
+      #sidepanel {
+        width: 225px;
+        background-color: white;
+        line-height: 20px;
+        padding: 10px;
+        float: left;
+        margin: 20px;
+
+        box-sizing: border-box;
+      }
+      #sidepanel li {
+        list-style-type: none;
+        padding-bottom: 5px;
+      }
+      #sidepanel span {
+        font-size: 1.2em;
+        font-weight: bolder;
+      }
+      #sidepanel hr {
+        margin: 5px 0;
+      }
+      #sidepanel input {
+        margin: 5px;
+        width: 17px;
+        height: 17px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- sidepanel starts here -->
+    <div id="sidepanel">
+      <!-- Category Filters -->
+      <ul>
+        <li><span>> </span>Category Filters</li>
+        <ul>
+          <li style="padding-left: 20px"><span>> </span>Fashion</li>
+          <ul>
+            <li style="padding-left: 40px"><span>> </span>Mens Clothing</li>
+            <ul>
+              <li style="padding-left: 60px"><span>> </span>Tshirt</li>
+            </ul>
+          </ul>
+        </ul>
+      </ul>
+      <hr />
+
+      <!-- shopclues surety -->
+      <h4>Shopclues Surety</h4>
+      <input type="checkbox" /><label for="surety">Surety</label><br />
+      <hr />
+
+      <!-- price -->
+      <h4>Price</h4>
+      <input type="checkbox" /><label>Rs. 499 and Below</label><br />
+      <input type="checkbox" /><label>Rs. 500 - Rs. 999 </label><br />
+      <input type="checkbox" /><label>Rs. 1000 - Rs. 1999</label><br />
+      <input type="checkbox" /><label>Rs.2000 and Above</label><br />
+      <hr />
+
+      <!-- Best seller -->
+      <h4>Best Seller</h4>
+      <input type="checkbox" /><label>Best seller(5)</label><br />
+      <hr />
+
+      <!-- brand -->
+      <h4>Brand</h4>
+      <input type="checkbox" /><label>29K(9)</label><br />
+      <input type="checkbox" /><label>Pause(24)</label><br />
+      <input type="checkbox" /><label>Aarmy fit(72)</label><br />
+      <input type="checkbox" /><label>ISHU(19)</label><br />
+      <p style="color: blue; text-decoration: underline; font-weight: bold">
+        View all
+      </p>
+      <hr />
+
+      <!-- side mens' upper -->
+      <h4>Side Mens' Upper</h4>
+      <input type="checkbox" /><label>S(9378)</label><br />
+      <input type="checkbox" /><label>M(12160)</label><br />
+      <input type="checkbox" /><label>L(12111)</label><br />
+      <input type="checkbox" /><label>XL(11607)</label><br />
+    </div>
+    <!-- sidepanel ends here -->
+  </body>
+</html>
