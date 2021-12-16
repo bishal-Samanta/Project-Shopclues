@@ -253,10 +253,11 @@ body {
     margin-top: 24px;
   }
   #sidepanel input { 
-    width: 15px;
-    height: 15px;
+    width: 17px;
+    height: 17px;
     margin-left: 10px;
     margin-right:13px;
+    
 
    
    
@@ -273,7 +274,7 @@ body {
 
   label{
     font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     color: #555;
   }
 

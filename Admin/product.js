@@ -77,4 +77,26 @@ function displayUi() {
 
     document.querySelector("#jsproduct").append(singlemainbox);
   });
+
+
+
+
+
+
+  //Filtering Function
+ document.querySelector("#high").addEventListener("change",hightolowfunction);
+
+ function hightolowfunction(){
+  arrofobj.sort(function(a,b){
+    return b.price - a.price
+  })
+
+  displayUi();
+ }
+
+
+
+
+
+
 }
