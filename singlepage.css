@@ -100,18 +100,24 @@ body{
 
 .middleDiv{
     border:1px dashed teal;
-    margin-top: 25px;
+    margin-top: 34px;
     line-height: 5px;
 }
 .box1P1{
     font-size: large;
-    /* padding: 4px; */
-    border: 1px solid red;;
-}    
+    padding: 0px;
+    border: 1px solid red;
+} 
+.box1P1_adjustup{
+   border: 1px solid teal;
+   margin-top: 5px;
+   line-height: 24px;
+}   
+    
 span{
    
     font-size: small;
-    line-height: 28px;
+    
 }             
 .price{
     font-size: x-large ;
@@ -152,6 +158,7 @@ span{
 }
 .box2{
     /* border: 1px solid red; */
+    margin-top: 10px;
     width: 70%;
     height: 140px;
 }
@@ -185,7 +192,7 @@ td{
     font-size: 15px;
 }
 .box3{
-    margin-top: 10px;
+    margin-top: 30px;
     border:1px solid blue;
 }
 .JoinNow{
@@ -199,7 +206,7 @@ td{
     cursor: pointer;
 }
 .box4{
-    margin-top: 2px;
+    margin-top: 10px;
     /* border: 1px solid red; */
     height: 20px;
     width: 70%;
@@ -217,10 +224,18 @@ div>ul>li{
 .offers3{
     font-size: 16px;
 }
+.box5{
+    border: 1px dashed darkorchid;
+}
 .box5_div1{
     /* display: inline-flex; */
     border: red 1px solid;
     justify-content: space-evenly;
+    margin-top: 20px;
+}
+.offers3{
+    font-size: large;
+    color: #566289;
 }
 .More2{
     /* border: 1px solid red; */
@@ -339,7 +354,7 @@ div>ul>li{
 .box9{
     display: inline-flex;
 }
-.box9>p{
+.box9>p,.box10>p{
     font-size: 12px;
     margin-right: 20px;
     color: #24a3b5;
