@@ -679,7 +679,7 @@ ul>li:hover{
     height: 390px;
     width: 1048px;
     margin: auto;
-    border: 1px solid red;
+    border: 1px solid transparent;
     margin-bottom: 40px;
     display: grid;
     grid-template: 100% / 516px 515px;
@@ -687,7 +687,7 @@ ul>li:hover{
   }
   
   #trendbody2 > div {
-    border: 1px solid blue;
+    border: 1px solid transparent;
     position: relative;
   }
   
