@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="product.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Add icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header-Start -->
+    <div id="navbar">
+      <div id="top" class="colortop">
+        <p class="hov">Sell with Us</p>
+        <p class="line hov">Call Us</p>
+        <p class="line">Download App</p>
+        <div>
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174836.png"
+          alt="" class=" img1">
+          <a href=" https://apps.apple.com/IN/app/id994486085?mt=8"
+            ><i class="fab fa-apple"></i
+          ></a>
+          <a
+            href="https://www.microsoft.com/en-in/p/shopclues/9nblgggzpjjd?rtc=1&activetab=pivot:overviewtab"
+            target="_blank"
+            ><i class="fab fa-windows"></i
+          ></a>
+        </div>
+      </div>
+      <div id="middle">
+        <div>
+          <img
+            src="https://images.shopclues.com/images/ui/shopclues_logo@2x.png"
+            alt=""
+            class="img2"
+            id="logo"
+          />
+        </div>
+        <div class="join">
+          <i class="fas fa-search" style="padding-right: 12px"></i>
+          <input
+            type="text"
+            name=""
+            id="Search"
+            placeholder="What is on your mind today?"
+          />
+          <!-- <input type="submit"> -->
+          <button>Search</button>
+        </div>
+        <div id="right" class="flex">
+          <div class="flex map-logo-share r1">
+            <div class="align map-logo">
+              <p class="small2 bold">Share</p>
+              <p class="small2">Location</p>
+            </div>
+            <i id="maplogo" class="fas fa-map-marker-alt fa-lg"></i>
+          </div>
+          <div>
+            <i class="far fa-bell fa-customize"></i>
+          </div>
+          <div>
+            <i class="far fa-heart fa-customize"></i>
+          </div>
+          <div>
+            <i class="fas fa-shopping-cart fa-customize"></i>
+          </div>
+          <div>
+            <h4
+              class="align"
+              style="border: 1px solid transparent; margin: 7px"
+            >
+              Sign In
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div id="bottom">
+        <img
+          src="https://images.shopclues.com/images/ui/madeinindia.png"
+          alt=""
+          height="33px"
+          id="madeInIndia"
+        />
+        <ul>
+          <li>MOBILE & MORE</li>
+          <li id="manbtn">MEN</li>
+          <li>WOMEN</li>
+          <li>HOME & KITCHEN</li>
+          <li>APPLIANCES</li>
+          <li>SPORTS & MORE</li>
+          <li>ESSENTIALS</li>
+          <li>OFFERS</li>
+          <li>GLOBAL SHOPPING</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Header-End -->
+
+    <!-- Mainbodi div start -->
+    <div id="mainbodydiv">
+      <!-- main div -->
+      <div id="maincontainerdiv">
+        <!-- Left filter box -->
+        <div>
+          <!-- sidepanel starts here -->
+          <div id="sidepanel">
+            <!-- price -->
+            <h4>Price</h4>
+            <input type="checkbox" id="below499" /><label
+              >Rs. 499 and Below</label
+            ><br />
+            <input type="checkbox" id="p500to999" /><label
+              >Rs. 500 - Rs. 999 </label
+            ><br />
+            <input type="checkbox" id="p1000to1999" /><label
+              >Rs. 1000 - Rs. 1999</label
+            ><br />
+            <input type="checkbox" id="p2000" /><label>Rs.2000 and Above</label
+            ><br />
+            <input type="checkbox" id="high" /><label>High-to-Low</label><br />
+            <input type="checkbox" id="low" /><label>Low-to-High</label><br />
+            <input type="checkbox" id="all" /><label>All Product</label><br />
+            <hr />
+
+            <!-- Discount-->
+            <h4>Discount</h4>
+            <input type="checkbox" id="upto20" /><label>Upto 20%</label><br />
+            <input type="checkbox" id="upto50" /><label>21% - 50%</label><br />
+            <input type="checkbox" id="upto70" /><label>50% - 70%</label><br />
+            <input type="checkbox" id="more70" /><label>More than 70%</label
+            ><br />
+            <hr />
+
+            <!-- brand -->
+            <h4>Brand</h4>
+            <input type="checkbox" id="hrx" /><label>HRX</label><br />
+            <input type="checkbox" id="wrogn" /><label>WROGN</label><br />
+            <input type="checkbox" id="modarapido" /><label>Moda Rapido</label
+            ><br />
+            <input type="checkbox" id="herenow" /><label>HERE & NOW</label
+            ><br />
+            <input type="checkbox" id="roadster" /><label>Roadster</label><br />
+            <hr />
+
+            <!-- side mens' upper -->
+            <h4>Size</h4>
+            <input type="checkbox" id="sizes" /><label>S</label><br />
+            <input type="checkbox" id="sizem" /><label>M</label><br />
+            <input type="checkbox" id="sizel" /><label>L</label><br />
+            <input type="checkbox" id="sizexl" /><label>XL</label><br />
+            <hr />
+
+            <!--Color Family-->
+            <h4>Color</h4>
+            <input type="checkbox" id="cred" /><label>Red</label><br />
+            <input type="checkbox" id="cblue" /><label>Blue</label><br />
+            <input type="checkbox" id="cgreen" /><label>Green</label><br />
+            <input type="checkbox" id="cblack" /><label>Black</label><br />
+            <input type="checkbox" id="cwhite" /><label>White</label><br />
+          </div>
+        </div>
+
+        <!-- Middle gap box -->
+        <div></div>
+
+        <!-- Last product box -->
+        <div>
+          <!-- first static heading section -->
+          <!-- Heading start -->
+          <div class="pageHeading">
+            <h1>T-Shirt For Men</h1>
+          </div>
+
+          <!-- Heading-End -->
+          <!-- Next div (pore korbo) -->
+          <div id="productcountdiv"></div>
+
+          <!-- Mainbox for product div start in js -->
+          <div id="jsproduct"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Mainbodi div end -->
+  </body>
+</html>
+
+<script src="product.js"></script>
