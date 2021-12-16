@@ -37,9 +37,9 @@ data.map(function (elem) {
 var MainProductImage = document.getElementById("topImage");
 console.log(MainProductImage)
 var SubProductImage = document.getElementsByClassName("small-img-col");
-for(var i=0;i<SubProductImage.length;i++){
-    console.log(SubProductImage[i]);
-}
+// for(var i=0;i<SubProductImage.length;i++){
+//     console.log(SubProductImage[i]);
+// }
 SubProductImage[0].onclick = function(){
     // MainProductImage = SubProductImage[0];
     MainProductImage.setAttribute("src","https://cdn.shopclues.com/images1/detailed/109145/150573840-109145405-1597763799.jpg")
@@ -55,8 +55,11 @@ SubProductImage[2].onclick = function(){
 }
 // -------------------------------------------------------------------------------------------
 // var MainProductImage = document.querySelector("#topImage");
-// var SubProductImage = document.querySelectorAll(".small-img-col");
-// console.log(SubProductImage)
+// var SubProductImage = document.querySelectorAll(".SubImages");
+// // console.log(SubProductImage)/
 // for(var i=0;i<SubProductImage.length;i++){
-//     console.log(SubProductImage[i]);
+//     console.log(SubProductImage[i].addEventListener("click",changeImage));
+// }
+// function changeImage(){
+
 // }
