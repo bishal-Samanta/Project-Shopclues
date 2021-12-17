@@ -10,7 +10,9 @@
   * {
     font-family: 'Roboto', sans-serif;
 }
-
+body {
+  background-color: rgb(239, 247, 250);
+}
 #navbar {
     /* border: 1px solid red; */
     width: 100%;
@@ -748,3 +750,132 @@ ul>li:hover{
   /* Trending page body 3 end*/
   
   /* Content div end */
+  /* footer section css starts here */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Roboto&display=swap");
+footer * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+footer {
+  width: 100%;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+
+  font-family: "Roboto", sans-serif;
+  color: rgb(149, 149, 149);
+  margin-top: 0;
+}
+footer > div:first-child {
+  border-top: 1px solid rgb(200, 200, 200);
+  width: 100%;
+}
+footer > div:first-child > img {
+  width: 100%;
+}
+footer > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 2%;
+  border: 1px solid rgb(200, 200, 200);
+  border-left: 0;
+  border-right: 0;
+}
+footer > div:nth-child(2) > ul > li {
+  list-style-type: none;
+  font-size: 90%;
+}
+footer > div:nth-child(2) > ul > li:first-child {
+  color: black;
+  margin-bottom: 20%;
+  font-size: 100%;
+}
+footer > div:nth-child(3) {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 2%;
+  border: 1px solid rgb(200, 200, 200);
+  border-left: 0;
+  border-right: 0;
+  color: black;
+  background-color: white;
+}
+footer > div:nth-child(3) > div {
+  width: 50%;
+}
+
+footer > div:nth-child(3) > div:last-child > div:last-child > img {
+  margin-top: 4%;
+  width: 100%;
+}
+footer > div:nth-child(4) {
+  padding: 2% 2%;
+  border: 1px solid rgb(200, 200, 200);
+  border-left: 0;
+  border-right: 0;
+  font-size: 90%;
+}
+footer > div:nth-child(4) > div:first-child {
+  color: black;
+  font-size: 120%;
+  font-weight: 900;
+  margin-bottom: 3%;
+}
+footer > div:nth-child(4) > div {
+  margin-bottom: 1%;
+}
+
+footer > div:nth-child(4) > div > span {
+  color: black;
+  font-weight: 900;
+}
+footer > div:nth-child(4) > div:last-child > span {
+  display: block;
+  margin-top: 4%;
+  margin-bottom: 2%;
+  font-size: 130%;
+}
+footer > div:nth-child(5) {
+  padding: 2% 2%;
+  border: 1px solid rgb(200, 200, 200);
+  border-left: 0;
+  border-right: 0;
+  font-size: 90%;
+  background-color: rgb(239, 247, 250);
+  text-align: justify;
+}
+footer > div:nth-child(5) > div:first-child {
+  color: black;
+  font-weight: 900;
+  font-size: 110%;
+  margin-bottom: 3%;
+}
+footer > div:nth-child(5) > div > span {
+  display: block;
+  color: black;
+  margin-top: 3%;
+  font-weight: 700;
+}
+footer > div:nth-child(5) > div > a {
+  color: rgb(38, 164, 182);
+  text-decoration: none;
+}
+footer > div:nth-child(6) {
+  padding: 1% 0 0 2%;
+  border: 0;
+  margin: 0;
+  font-size: 80%;
+}
+footer > div:nth-child(7) {
+  float: right;
+  display: flex;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 80%;
+}
+footer > div:nth-child(7) > img {
+  width: 20%;
+  margin-right: 0;
+}
+/*footer section css ends here*/
