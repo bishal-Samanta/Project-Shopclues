@@ -227,6 +227,7 @@ ul>li:hover{
     background-color: #eef6fa;
     padding-top: 135px;
     width: 100%;
+    min-width: 1500px;
     margin-left: 0px;
     margin-right: 0px;
     padding-bottom: 20px;

@@ -1,13 +1,18 @@
-body{
-    margin-top: 100px;
-}
+
+/* Header - Start */
+
+
+
+
+
+
 *{
     font-family: 'Roboto', sans-serif;
 }
 #wholeDiv-border{
     
     /* border: 1px solid red; */
-    width: 95%;
+    width: 1480px;
     /* height: 900px; */
     margin: auto;
     display: grid;
@@ -15,6 +20,8 @@ body{
     grid-template-rows: 500px;
     grid-gap: 20px;
     padding: 30px;
+    padding-top: 130px;
+    border: 1px solid transparent;
     /* padding: 30px; */
     /* justify-content: space-around; */
 }
