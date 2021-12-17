@@ -12,6 +12,9 @@
   /* border: 1px solid red; */
   width: 100%;
   overflow: hidden;
+  position: fixed;
+  background-color: white;
+  z-index: 3;
 }
 
 #top {
@@ -197,11 +200,12 @@ body {
 /* Main-Content-Body-Div-Start */
 #mainbodydiv {
   background-color: #eef6fa;
-  padding-top: 20px;
+  padding-top: 150px;
   width: 100%;
   margin-left: 0px;
   margin-right: 0px;
   padding-bottom: 40px;
+  
   /* padding-bottom: 20px; */
 }
 /* Main-Content-Body-Div-end */
@@ -413,4 +417,21 @@ body {
 
 .budjetbazar>div{
   border: 1px solid transparent;
+}
+
+
+.hovereff:hover{
+  position:relative;
+  top:2px;
+  left:0px;
+  display:block;
+  z-index:2;
+  
+}
+
+.mainhover:hover{
+  
+  border: 1px solid #24A3B5;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
 }
