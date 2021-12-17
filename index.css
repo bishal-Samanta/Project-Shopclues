@@ -435,3 +435,11 @@ body {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
 }
+
+#firsthov{
+  border: 1px solid red;
+}
+
+.imageopa:hover{
+  opacity: 0.5;
+}
