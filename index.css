@@ -201,6 +201,7 @@ body {
   width: 100%;
   margin-left: 0px;
   margin-right: 0px;
+  padding-bottom: 40px;
   /* padding-bottom: 20px; */
 }
 /* Main-Content-Body-Div-end */
@@ -397,4 +398,19 @@ body {
   color: #61bdc9;
   font-size: 15px;
   font-weight: 500;
+}
+
+
+.budjetbazar{
+  height: 200px;
+  width: 1480px;
+  margin: auto;
+  border: 1px solid transparent;
+  display: grid;
+  grid-template: 100% / repeat(5,1fr);
+  margin-bottom: 30px;
+}
+
+.budjetbazar>div{
+  border: 1px solid transparent;
 }
