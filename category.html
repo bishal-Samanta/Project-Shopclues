@@ -9,7 +9,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Roboto:wght@100;300&display=swap"
       rel="stylesheet"
     />
@@ -19,7 +19,8 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Roboto:wght@100;300;400;500&display=swap"
       rel="stylesheet"
-    />
+    /> -->
+    <script src="https://kit.fontawesome.com/034163b1ad.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <!-- Header-Start -->
@@ -124,9 +125,9 @@
 
         <!-- Category-Box -Start -->
         <div id="category">
-          <div id="tshirt">
+          <div id="tshirt" class="imghov">
             <div>
-              <div>
+              <div >
                 <img
                   src="https://cdn.shopclues.com/images/banners/Work/widgetClp/MenApparelCLPNov24/updated/img_t_shirt_nav.jpg"
                   alt="tshirt"
@@ -138,7 +139,7 @@
             <div>T-Shirt</div>
           </div>
 
-          <div>
+          <div class="imghov">
             <div>
               <div>
                 <img
@@ -152,7 +153,7 @@
             <div>Jeans</div>
           </div>
 
-          <div>
+          <div class="imghov">
             <div>
               <div>
                 <img
@@ -166,7 +167,7 @@
             <div>Casual Shirts</div>
           </div>
 
-          <div>
+          <div class="imghov">
             <div>
               <div>
                 <img
@@ -180,7 +181,7 @@
             <div>Formal Shirt</div>
           </div>
 
-          <div>
+          <div class="imghov">
             <div>
               <div>
                 <img
@@ -194,7 +195,7 @@
             <div>Winter Wear</div>
           </div>
 
-          <div>
+          <div class="imghov">
             <div>
               <div>
                 <img
@@ -208,7 +209,7 @@
             <div>Ethnic Wear</div>
           </div>
 
-          <div>
+          <div class="imghov">
             <div>
               <div>
                 <img
@@ -222,7 +223,7 @@
             <div id="incheight">Innerwear & Sleepwear</div>
           </div>
 
-          <div>
+          <div class="imghov" id="viewall">
             <div>
               <div>
                 <img
@@ -733,4 +734,10 @@
   document.querySelector("#logo").addEventListener("click", function () {
     window.location.href = "index.html";
   });
+
+
+  document.querySelector("#viewall").addEventListener("click",function(){
+    window.location.href = "product.html"
+    
+  })
 </script>

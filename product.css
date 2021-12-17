@@ -14,6 +14,7 @@
   position: fixed;
   overflow: hidden;
   background-color: #fefeff;
+  z-index: 3;
 }
 
 #top {
@@ -52,7 +53,7 @@
 #middle {
   border: 1px solid transparent;
   width: 1500px;
-  height: 30px;
+  height: 36px;
   margin-top: 5px;
   display: flex;
   justify-content: space-between;
@@ -184,6 +185,9 @@ ul > li:hover {
   margin-right: 0px;
   margin-top: 2px;
 }
+/* li{
+  color: white !important;
+} */
 
 /* Header - End */
 
@@ -203,6 +207,7 @@ body {
   background-color: #eef6fa;
   padding-top: 160px;
   width: 100%;
+  min-width: 1500px;
   margin-left: 0px;
   margin-right: 0px;
 }

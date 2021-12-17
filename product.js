@@ -606,7 +606,7 @@ function displayUi(arrofobj) {
       //console.log(arrofobj[i]);
       var singledata = arrofobj[i];
       localStorage.setItem("SingleProd", JSON.stringify(singledata));
-      window.location.href = "singlepage.html";
+      window.location.href = "singleprod.html";
     });
   });
 

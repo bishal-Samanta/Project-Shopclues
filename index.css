@@ -12,6 +12,9 @@
   /* border: 1px solid red; */
   width: 100%;
   overflow: hidden;
+  position: fixed;
+  background-color: white;
+  z-index: 3;
 }
 
 #top {
@@ -50,7 +53,7 @@
 #middle {
   border: 1px solid transparent;
   width: 1500px;
-  height: 30px;
+  height: 36px;
   margin-top: 5px;
   display: flex;
   justify-content: space-between;
@@ -196,11 +199,13 @@ body {
 
 /* Main-Content-Body-Div-Start */
 #mainbodydiv {
-  background-color: #eef6fa;
-  padding-top: 20px;
+  background-color: #EEF6FA;
+  padding-top: 140px;
   width: 100%;
-  margin-left: 0px;
-  margin-right: 0px;
+  min-width: 1500px;
+  padding-bottom: 40px;
+  border: 1px solid transparent;
+ 
   /* padding-bottom: 20px; */
 }
 /* Main-Content-Body-Div-end */
@@ -397,4 +402,44 @@ body {
   color: #61bdc9;
   font-size: 15px;
   font-weight: 500;
+}
+
+
+.budjetbazar{
+  height: 200px;
+  width: 1480px;
+  margin: auto;
+  border: 1px solid transparent;
+  display: grid;
+  grid-template: 100% / repeat(5,1fr);
+  margin-bottom: 30px;
+}
+
+.budjetbazar>div{
+  border: 1px solid transparent;
+}
+
+
+.hovereff:hover{
+  position:relative;
+  top:2px;
+  left:0px;
+  display:block;
+  z-index:2;
+  
+}
+
+.mainhover:hover{
+  
+  border: 1px solid #24A3B5;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+
+#firsthov{
+  border: 1px solid red;
+}
+
+.imageopa:hover{
+  opacity: 0.5;
 }
