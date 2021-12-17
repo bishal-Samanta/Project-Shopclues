@@ -199,13 +199,13 @@ body {
 
 /* Main-Content-Body-Div-Start */
 #mainbodydiv {
-  background-color: #eef6fa;
+  background-color: #EEF6FA;
   padding-top: 140px;
   width: 100%;
-  margin-left: 0px;
-  margin-right: 0px;
+  min-width: 1500px;
   padding-bottom: 40px;
-  
+  border: 1px solid transparent;
+ 
   /* padding-bottom: 20px; */
 }
 /* Main-Content-Body-Div-end */

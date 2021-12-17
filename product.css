@@ -204,6 +204,7 @@ body {
   background-color: #eef6fa;
   padding-top: 160px;
   width: 100%;
+  min-width: 1500px;
   margin-left: 0px;
   margin-right: 0px;
 }
