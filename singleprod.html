@@ -8,7 +8,7 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/034163b1ad.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="singlepage.css">
+    <link rel="stylesheet" href="singleprod.css">
 </head>
 
 <body>
@@ -45,10 +45,10 @@
                         <span style="color: #837e8b;"> Product Id:<span id="ProductID">150573840</span></span><br>
                         <span class="StaticReview">Be the first to write a review</span>
                         <br>
-                        <span class="price" id="DealPrice">313</span>
+                        <span class="price DealPrice" id="DealPrice">313</span>
                         <span class="price remPrice">349</span>
-                        <span>MRP<span class="price remPrice">999</span></span>
-                        <span class="off_size">68% off</span>
+                        <span>MRP<span class="price remPrice" id="MRP">999</span></span>
+                        <span class="off_size"><span class="off_size" id="Discount">68</span>% off</span>
                         <br>
                         <span style="color: #837e8b;">Inclusive of all taxes</span>
                     </div>
@@ -78,7 +78,7 @@
                                 <td class="price td_last_row_size">349</td>
                                 <td class="price td_last_row_size">16</td>
                                 <td class="price td_last_row_size">20</td>
-                                <td class="price td_last_row_size" id="DealPrice">313</td>
+                                <td class="price td_last_row_size DealPrice" id="DealPrice">313</td>
                             </tr>
 
                         </tbody>
@@ -102,7 +102,7 @@
                     </div>
                     <div>
                         <ul>
-                            <li>Color Family : Orange</li>
+                            <li id="ColorFamily">Color Family : Orange</li>
                         </ul>
                     </div>
                 </div>
@@ -176,6 +176,6 @@
 </body>
 
 </html>
-<script src="singlepage.js">
+<script src="singleprod.js">
 
 </script>
