@@ -57,6 +57,13 @@ if(data.length != 0){
     }
 }
 
+var grandTotalDiv = document.querySelector('.GTotalDiv');
+
+var tP = document.createElement('p');
+tP.setAttribute("class","tP");
+var gTotal = document.createElement('p');
+gTotal.setAttribute("class","gTotal");
+
 
 function products(){
     var productsDiv = document.querySelector('.productsDiv');
@@ -66,7 +73,6 @@ function products(){
         var h1 = h.toString();
         pDiv.style.height = h1+"px";
     }
-
     data.map(function(ele){
 
         var pD = document.createElement('div');
@@ -102,7 +108,7 @@ function products(){
 
         var minus = document.createElement('a');
         minus.setAttribute("class","minus");
-        minus.textContent = "-";
+        minus.textContent = "−";
 
         var quantity = document.createElement('span');
         quantity.setAttribute('class','quantity');
@@ -151,12 +157,10 @@ function products(){
         var p = ele.price.split('');
         var pri = p[2] + p[3] + p[4];
         var reducedprice = +pri;
-        console.log(reducedprice);
 
         var m = ele.mrp.split('');
         var mrp = m[2] + m[3] + m[4];
         var maxprice = +mrp;
-        console.log(maxprice);
 
         var pricespan = document.createElement('span');
         pricespan.setAttribute('class','pricespan');
@@ -177,11 +181,12 @@ function products(){
         shipping_fee.setAttribute('class','shipping_fee');
         shipping_fee.textContent = "Shipping Fee : ";
 
-        var shipping = 20;
+        // var shipping = 20;
         var shippingspan = document.createElement('span');
         shippingspan.setAttribute('class','shippingspan');
-        shippingspan.textContent = "Rs "+shipping;
-        var s = shipping;
+        // shippingspan.textContent = "Rs "+shipping;
+        shippingspan.textContent = "FREE";
+        // var s = shipping;
 
         var b3 = document.createElement("br");
         var b4 = document.createElement("br");
@@ -192,8 +197,11 @@ function products(){
 
         var tPrice = document.createElement('span');
         tPrice.setAttribute('class','tPrice');
-        var total = reducedprice + shipping;
-        var t = reducedprice + shipping;
+        // var total = reducedprice + shipping;
+        // var t = reducedprice + shipping;
+
+        var total = reducedprice;
+        var t = reducedprice;
         tPrice.textContent = "Rs "+total;
         console.log(total);
 
@@ -213,49 +221,77 @@ function products(){
             total = total - t;
             maxprice = maxprice - mp;
             d = d - n;
-            shipping = shipping - s;
-            displayPrice(total,t);
+            // shipping = shipping - s;
+            // displayPrice(total,t);
             tPrice.textContent = "Rs "+total;
             discountspan.textContent = "- Rs "+d;
             pricespan.textContent = "Rs "+maxprice;
-            shippingspan.textContent = "Rs "+shipping;
+            // shippingspan.textContent = "Rs "+shipping;
+            shippingspan.textContent = "FREE";
+            updateTotalMinus(t);
         }
 
         function displayDataPlus(quan){
             total = total + t;
             maxprice = maxprice + mp;
             d = d + n;
-            shipping = shipping + s;
-            displayPrice(total,t);
+            // shipping = shipping + s;
+            // displayPrice(total,t);
             tPrice.textContent = "Rs "+total;
             discountspan.textContent = "- Rs "+d;
             pricespan.textContent = "Rs "+maxprice;
-            shippingspan.textContent = "Rs "+shipping;
+            // shippingspan.textContent = "Rs "+shipping;
+            shippingspan.textContent = "FREE";
+            updateTotalPlus(t);
         }
     })
 }
 
-var grandTotalDiv = document.querySelector('.GTotalDiv');
+var total = 0;
+function updateTotal(){
+    var pD = document.getElementsByClassName("pD");
+    for(var i=0; i<pD.length; i++){
+        var cartRow = pD[i];
+        var priceElement = cartRow.getElementsByClassName("tPrice")[0];
+        var quantityElement = cartRow.getElementsByClassName("quantity")[0];
 
-var tP = document.createElement('p');
-tP.setAttribute("class","tP");
-var gTotal = document.createElement('p');
-gTotal.setAttribute("class","gTotal");
+        var price = parseInt(priceElement.innerText.replace('Rs',''));
+        var quantity = parseInt(quantityElement.innerText);
 
-var t = document.querySelector(".tPrice").textContent;
-t = t[3]+t[4]+t[5];
-var num = t.split("").map(Number);
-var j = num.join('');
-var n = parseInt(j);
-n = n*data.length;
-tP.textContent = "Total : Rs "+ n;
-gTotal.textContent = "Grand Total : Rs "+ n;
-
-function displayPrice(total,t){
-    var nums = total + n - t;
-    tP.textContent = "Total : Rs "+ nums;
-    gTotal.textContent = "Grand Total : Rs "+ nums;
+        total = total + (price * quantity);
+    }
+    tP.textContent = "Total : Rs "+ total;
+    gTotal.textContent = "Grand Total : Rs "+ total;
 }
+
+function updateTotalMinus(t){
+    total = total - t;
+    tP.textContent = "Total : Rs "+ total;
+    gTotal.textContent = "Grand Total : Rs "+ total;
+}
+
+function updateTotalPlus(t){
+    total = total + t;
+    tP.textContent = "Total : Rs "+ total;
+    gTotal.textContent = "Grand Total : Rs "+ total;
+}
+
+updateTotal();
+
+// var t = document.querySelector(".tPrice").textContent;
+// t = t[3]+t[4]+t[5];
+// var num = t.split("").map(Number);
+// var j = num.join('');
+// var n = parseInt(j);
+// n = n*data.length;
+// tP.textContent = "Total : Rs "+ n;
+// gTotal.textContent = "Grand Total : Rs "+ n;
+
+// function displayPrice(total,t){
+//     var nums = total + n - t;
+//     tP.textContent = "Total : Rs "+ nums;
+//     gTotal.textContent = "Grand Total : Rs "+ nums;
+// }
 
 var rules = document.createElement('p');
 rules.setAttribute("class","rules");
