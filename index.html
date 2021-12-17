@@ -114,8 +114,12 @@
             <img
               src="https://cdn.shopclues.com/images/banners/FB4_NirlonCookware_sk_14Dec21_Web.jpg"
               alt=""
-              class="allImage borderbig"
+              class="allImage borderbig SliderImage " 
             />
+            <img src="https://cdn.shopclues.com/images/banners/HB4_Web_FeaturePhones_sk_17Dec21.jpg" alt="" class="SliderImage borderbig" width="100% " height="100%">
+            <img src="https://cdn.shopclues.com/images/banners/best_of_fashion_w_rk_1006.jpg" alt="" class="SliderImage borderbig" width="100% " height="100%">
+            <img src="https://cdn.shopclues.com/images/banners/HB1_FBB_Web_MK5_17Dec21.jpg" alt="" class="SliderImage borderbig" width="100% " height="100%">
+            <img src="https://cdn.shopclues.com/images/banners/ShopClues_HB_MainBanner_Web.jpg" alt="" class="SliderImage borderbig" width="100% " height="100%">
           </div>
 
           <div>
@@ -2059,7 +2063,22 @@
   document.querySelector("#manbtn").addEventListener("click", function () {
     window.location.href = "category.html";
   });
-
+    // slider image program
+    var myIndex = 0;
+  carousel();
+  function carousel() {
+  var x = document.getElementsByClassName("SliderImage");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {
+    myIndex = 1;
+  }    
+  x[myIndex-1].style.display = "block"; 
+  // x[myIndex-1].style.border-radius = "7px" 
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
 
   
 </script>
