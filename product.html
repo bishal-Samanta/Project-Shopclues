@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>T-Shirt For Men</title>
     <link rel="stylesheet" href="product.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -89,7 +89,39 @@
               class="align"
               style="border: 1px solid transparent; margin: 7px"
             >
-              Sign In
+              <span
+                style="
+                  display: inline-block;
+                  line-height: 24px;
+                  font-weight: 500;
+                  color: #212121;
+                  position: relative;
+                  font-size: 90%;
+                "
+                >Hi,</span
+              ><span
+                id="guest"
+                style="
+                  display: inline-block;
+                  line-height: 24px;
+                  font-weight: 500;
+                  color: #212121;
+                  position: relative;
+                  font-size: 90%;
+                "
+                >Guest</span
+              >&nbsp;<span
+                id="login"
+                style="
+                  display: inline-block;
+                  line-height: 24px;
+                  font-weight: 500;
+                  color: #212121;
+                  position: relative;
+                  font-size: 90%;
+                "
+                >Sign In</span
+              >
             </h4>
           </div>
         </div>
@@ -462,3 +494,22 @@
 </html>
 
 <script src="product.js"></script>
+<script>
+  var systemStatus = localStorage.getItem("system");
+  var userStatus = localStorage.getItem("user");
+  document.getElementById("login").addEventListener("click", function () {
+    if (systemStatus == null) {
+      window.location.href = "./login.html";
+    } else if (systemStatus == "online") {
+      localStorage.removeItem("system");
+      localStorage.removeItem("user");
+      window.location.reload();
+      alert("you are successfully logged out.");
+    }
+  });
+
+  if (systemStatus == "online") {
+    document.getElementById("guest").innerHTML = userStatus;
+    document.getElementById("login").innerHTML = "Log Out";
+  }
+</script>
