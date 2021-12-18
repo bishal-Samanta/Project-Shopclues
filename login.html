@@ -26,9 +26,11 @@
         background-color: white;
         display: flex;
         border-radius: 1%;
+        
       }
       main > div {
         height: 100%;
+        
       }
       main div img {
         height: 100%;
@@ -39,35 +41,38 @@
         padding-left: 4%;
         padding-top: 5%;
         color: rgb(149, 149, 149);
+        border: 1px solid transparent;
       }
       main > div:nth-child(2) > form > h3 {
+       
       }
-      main > div:nth-child(2) > form > h3:hover {
+      /* main > div:nth-child(2) > form > h3:hover {
         color: rgb(38, 164, 182);
         text-decoration: underline;
-      }
+      } */
       main > div:nth-child(2) > form > label {
         margin-bottom: 0;
         display: block;
       }
-      main > div:nth-child(2) > form > label:hover {
+      /* main > div:nth-child(2) > form > label:hover {
         color: rgb(38, 164, 182);
         font-size: 80%;
-      }
+      } */
       main > div:nth-child(2) > form > input {
         border: 0;
         border-bottom: 1px solid rgb(149, 149, 149);
         width: 100%; /*change accordingly*/
         height: fit-content;
-        margin-top: 0;
-        padding-top: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 20px;
       }
-      main > div:nth-child(2) > form > input:hover {
+      /* main > div:nth-child(2) > form > input:hover {
         border: 0px;
         border-bottom: 2px solid rgb(38, 164, 182);
         height: 150%;
         margin-bottom: 10px;
-      }
+      } */
       #submit {
         background-color: rgba(255, 133, 81);
         border: 0;
@@ -77,6 +82,7 @@
         border-radius: 5px;
         font-size: 5mm;
         cursor: pointer;
+       
       }
       #submit:hover {
         background-color: rgba(255, 101, 94);
@@ -90,10 +96,17 @@
         border-radius: 5px;
         font-size: 5mm;
         cursor: pointer;
+        
       }
       #register:hover {
         background-color: rgba(255, 101, 94);
       }
+
+      #myform{
+        display: flex;
+        flex-direction: column;
+      }
+
       /* button span {
         font-size: 150%;
         font-weight: bolder;
@@ -114,9 +127,9 @@
           <h3>LOG IN</h3>
           <br /><br />
           <label for="input">Enter your email id or phone number</label>
-          <input type="text" id="input" required />
+          <input type="text" id="input" style="height: 30px;" required  />
           <label for="password">Enter your password</label>
-          <input type="password" id="password" required />
+          <input type="password" id="password" style="height: 30px;" required />
 
           <br />
           <br />

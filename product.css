@@ -242,6 +242,7 @@ body {
 #maincontainerdiv > div:nth-child(1) {
   border-radius: 7px;
   border: 1px solid transparent;
+  padding-bottom: 25px;
 }
 #maincontainerdiv > div:nth-child(3) {
   border-radius: 7px;
