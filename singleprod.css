@@ -12,6 +12,8 @@ body {
 }
 #navbar {
   /* border: 1px solid red; */
+  margin-top: -8px;
+  margin-left: -8px;
   width: 100%;
   overflow: hidden;
   position: fixed;
@@ -404,7 +406,7 @@ td {
 }
 div > ul > li {
   font-size: 14px;
-  color: #7b99c0;
+  color: white;
 }
 .box4_div1 {
   padding-left: 0px;

@@ -146,7 +146,7 @@
       var input = document.getElementById("input").value;
       var password = document.getElementById("password").value;
       var flag = false;
-      if (input == "admin@email.com" && password == "admin") {
+      if (input == "admin@gmail.com" && password == "pass") {
         flag = true;
         window.location.href = "./admin.html";
       }
@@ -162,7 +162,7 @@
 
           localStorage.setItem("system", "online");
           localStorage.setItem("user", userData[i].username);
-          window.location.href = "./index.html";
+          window.location.href = "./address.html";
           alert("You are successfully logged in.");
         }
       }

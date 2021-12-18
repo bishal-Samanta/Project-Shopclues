@@ -27,7 +27,7 @@ var AllArr = [];
 //     "size": "M"
 // }
 AllArr.push(proddetails);
-console.log(AllArr)
+console.log(AllArr);
 AllArr.map(function(elem){
     document.querySelector(".box1P1").textContent = elem.name;
     var image1 = document.querySelector("#topImage");
@@ -97,3 +97,39 @@ SubProductImage[2].onclick = function(){
     console.log(MainProductImage)
 }
 // -------------------------------------------------------------------------------------------
+
+// by Sumeet
+// add cart function and buy Now function
+
+var addCart = document.querySelector(".addCart");
+addCart.addEventListener('click',addCartData);
+
+var buyNow = document.querySelector(".buyNow");
+buyNow.addEventListener('click',buyProduct);
+
+var cartArr = JSON.parse(localStorage.getItem("cartDatabase")) || [];
+
+function addCartData(){
+    cartArr.push(AllArr[0]);
+    localStorage.setItem("cartDatabase",JSON.stringify(cartArr));
+}
+
+function buyProduct(){
+    cartArr.push(AllArr[0]);
+    localStorage.setItem("cartDatabase",JSON.stringify(cartArr));
+    window.location.href = "cart1.html";
+}
+
+// cartIcon function
+
+var cartIcon = document.querySelector("#cartIcon");
+cartIcon.addEventListener("click", cartPage);
+
+function cartPage(){
+    if(cartArr.length == 0){
+        window.location.href = "cart.html";
+    }
+    else{
+        window.location.href = "cart1.html";
+    }
+}

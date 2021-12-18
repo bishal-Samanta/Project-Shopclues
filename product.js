@@ -614,3 +614,16 @@ function displayUi(arrofobj) {
     window.location.href = "index.html";
   });
 }
+
+var cartArr = JSON.parse(localStorage.getItem("cartDatabase"));
+var cartIcon = document.querySelector("#cartIcon");
+cartIcon.addEventListener("click", cartPage);
+
+function cartPage(){
+    if(cartArr.length == 0){
+        window.location.href = "cart.html";
+    }
+    else{
+        window.location.href = "cart1.html";
+    }
+}
