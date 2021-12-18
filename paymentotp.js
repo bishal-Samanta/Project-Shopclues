@@ -20,6 +20,7 @@ function otpCheck(){
 var DataArr = JSON.parse(localStorage.getItem("mainDatabase")) || [];
 var arr = [];
 var cartArr = JSON.parse(localStorage.getItem("cartDatabase"));
+var arr1 = [];
 
 function pushData(uDatabase){
     var message = document.querySelector('.message');
@@ -29,6 +30,7 @@ function pushData(uDatabase){
         localStorage.removeItem("UserDatabase");
         localStorage.removeItem("cartDatabase");
         localStorage.setItem("cartDatabase", JSON.stringify(arr));
+        localStorage.setItem("orderDatabase", JSON.stringify(arr1));
     }
     console.log(DataArr);
     localStorage.setItem("mainDatabase", JSON.stringify(DataArr));
@@ -45,8 +47,9 @@ var headerImg = document.querySelector('.headerImg');
 headerImg.addEventListener('click',backToProduct);
 
 function backToProduct(){
-    window.location.href = "product.html";
+    window.location.href = "index.html";
 }
+
 
 
 

@@ -15,7 +15,7 @@ var arrow = document.querySelector('.arrow');
 arrow.addEventListener('click',backTo);
 
 function backTo(){
-    window.location.href = "product.html";
+    window.location.href = "index.html";
 }
 
 

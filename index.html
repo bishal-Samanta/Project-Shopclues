@@ -2394,8 +2394,8 @@
   });
   // slider image program
   var myIndex = 0;
-  carousel();
-  function carousel() {
+  displayImgChange();
+  function displayImgChange() {
     var x = document.getElementsByClassName("SliderImage");
     for (var i = 0; i < x.length; i++) {
       x[i].style.display = "none";
@@ -2406,7 +2406,7 @@
     }
     x[myIndex - 1].style.display = "block";
     // x[myIndex-1].style.border-radius = "7px"
-    setTimeout(carousel, 3000); // Change image every 2 seconds
+    setTimeout(displayImgChange, 3000); // Change image every 2 seconds
   }
 </script>
 <script>
@@ -2429,16 +2429,16 @@
   }
 </script>
 <script>
-  var cartArr = JSON.parse(localStorage.getItem("cartDatabase"));
+  var cartArr = JSON.parse(localStorage.getItem("cartDatabase")) || [];
   var cartIcon = document.querySelector("#cartIcon");
   cartIcon.addEventListener("click", cartPage);
 
   function cartPage(){
-      if(cartArr.length == 0){
-        window.location.href = "cart.html";
-      }
-      else{
-        window.location.href = "cart1.html";
-      }
+    if(cartArr.length == 0){
+      window.location.href = "cart.html";
+    }
+    else{
+      window.location.href = "cart1.html";
+    }
   }
 </script>
