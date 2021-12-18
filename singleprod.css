@@ -586,7 +586,7 @@ footer {
 
   font-family: "Roboto", sans-serif;
   color: rgb(149, 149, 149);
-  margin-top: 0;
+  margin-top: 470px;
 }
 footer > div:first-child {
   border-top: 1px solid rgb(200, 200, 200);
@@ -602,10 +602,13 @@ footer > div:nth-child(2) {
   border: 1px solid rgb(200, 200, 200);
   border-left: 0;
   border-right: 0;
+  
 }
+
 footer > div:nth-child(2) > ul > li {
   list-style-type: none;
   font-size: 90%;
+  color:rgb(149, 149, 149); 
 }
 footer > div:nth-child(2) > ul > li:first-child {
   color: black;
