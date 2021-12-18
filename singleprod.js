@@ -133,3 +133,7 @@ function cartPage(){
         window.location.href = "cart1.html";
     }
 }
+
+document.querySelector("#logoimg").addEventListener("click",function(){
+    window.location.href = "index.html";
+})
