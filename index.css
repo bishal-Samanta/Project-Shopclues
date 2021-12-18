@@ -106,6 +106,9 @@ button {
   border: none;
   background-color: #e9f6f7;
 }
+.join button{
+  color: white;
+}
 
 .flex {
   display: inline-flex;
@@ -135,8 +138,9 @@ button {
 }
 
 .fa-customize {
-  font-size: 27px;
+  font-size: 24px;
   padding-top: 7px;
+  color: #61bdca;
 }
 
 #right {
@@ -172,13 +176,14 @@ button {
   align-items: center;
   justify-content: space-between;
 }
-ul > li {
+#bottom >ul > li {
   /* border:1px solid black; */
   font-size: 13px;
   padding: 10px;
-  height: 19px;
+  height: 24px;
+  padding-top: 15px;
 }
-ul > li:hover {
+#bottom > ul > li:hover {
   background-color: white;
   color: #24a3b5;
 }
