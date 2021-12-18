@@ -80,7 +80,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-button {
+.join button {
   margin-left: 0%;
   padding: 0px 30px;
   border: none;
