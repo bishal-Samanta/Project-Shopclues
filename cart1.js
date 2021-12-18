@@ -290,56 +290,56 @@ function backTo(){
 
 var userCheck = localStorage.getItem("system");
 place.addEventListener('click',placeOrder);
-var orderArr = JSON.parse(localStorage.getItem('orderDatabase')) || [];
+var orderArr = [];
 console.log(orderArr);
 
 function placeOrder(){
     if(userCheck != "online"){
         window.location.href = "login.html";
     }
-    else if(userCheck == "online"){
-        var productArr = [];
-        var productSize = [];
-        var productColor = [];
-        data.map(function(ele){
-            productArr.push(ele.name);
-            productSize.push(ele.size);
-            productColor.push(ele.color_family);
-        })
-
-        var productQuantity = [];
-        var pD = document.getElementsByClassName("pD");
-        for(var i=0; i<pD.length; i++){
-            var cartRow = pD[i];
-            var quantityElement = cartRow.getElementsByClassName("quantity")[0];
-            var quantity = parseInt(quantityElement.innerText);
-            productQuantity.push(quantity);
-        }
-        console.log(productQuantity);
-        
-        var gT = document.querySelector(".gTotal");
-        gT = gT.innerHTML.replace("Grand Total : Rs ","");
-        var g = parseInt(gT);
-
-        if(data.length != 0){
-            if(orderArr.length >= 1){
-                orderArr.pop();
-            }
-            var orderObj = {
-                product_List : productArr,
-                product_quantity_List : productQuantity,
-                product_size_List : productSize,
-                product_color_List : productColor,
-                total_Price : g,
-            };
-            orderArr.push(orderObj);
-            localStorage.setItem("orderDatabase",JSON.stringify(orderArr));
-            window.location.href = "address.html";
+    else{
+        if(data.length == 0){
+            alert("Please add product to cart.");
         }
         else{
-            alert("Please add products to cart");
+            order();
         }
     }
+}
+
+function order(){
+    var productArr = [];
+    var productSize = [];
+    var productColor = [];
+    data.map(function(ele){
+        productArr.push(ele.name);
+        productSize.push(ele.size);
+        productColor.push(ele.color_family);
+    })
+
+    var productQuantity = [];
+    var pD = document.getElementsByClassName("pD");
+    for(var i=0; i<pD.length; i++){
+        var cartRow = pD[i];
+        var quantityElement = cartRow.getElementsByClassName("quantity")[0];
+        var quantity = parseInt(quantityElement.innerText);
+        productQuantity.push(quantity);
+    }
+    
+    var gT = document.querySelector(".gTotal");
+    gT = gT.innerHTML.replace("Grand Total : Rs ","");
+    var g = parseInt(gT);
+    var orderObj = {
+        product_List : productArr,
+        product_quantity_List : productQuantity,
+        product_size_List : productSize,
+        product_color_List : productColor,
+        total_Price : g,
+    };
+    orderArr.push(orderObj);
+    localStorage.setItem("orderDatabase",JSON.stringify(orderArr));
+    window.location.href = "./address.html";
+    console.log(orderArr);
 }
 
 
@@ -347,4 +347,3 @@ function placeOrder(){
 
 
     
-

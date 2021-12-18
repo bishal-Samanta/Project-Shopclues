@@ -81,7 +81,7 @@ function debitDetails(){
 
     var cardCvv = document.createElement('input')
     cardCvv.setAttribute('class','cardCvv');
-    cardCvv.setAttribute('type','text');
+    cardCvv.setAttribute('type','password');
     cardCvv.setAttribute('placeholder','CVV');
 
     cardCvvDiv.append(cardCvv);
