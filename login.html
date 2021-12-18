@@ -145,11 +145,12 @@
       event.preventDefault();
       var input = document.getElementById("input").value;
       var password = document.getElementById("password").value;
-
+      var flag = false;
       if (input == "admin@email.com" && password == "admin") {
+        flag = true;
         window.location.href = "./admin.html";
       }
-      var flag = false;
+
       var count = 0;
 
       for (var i = 0; i < userData.length; i++) {
