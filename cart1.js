@@ -291,6 +291,7 @@ function backTo(){
 var userCheck = localStorage.getItem("system");
 place.addEventListener('click',placeOrder);
 var orderArr = JSON.parse(localStorage.getItem('orderDatabase')) || [];
+console.log(orderArr);
 
 function placeOrder(){
     if(userCheck != "online"){
@@ -305,7 +306,6 @@ function placeOrder(){
             productSize.push(ele.size);
             productColor.push(ele.color_family);
         })
-        console.log(productArr);
 
         var productQuantity = [];
         var pD = document.getElementsByClassName("pD");

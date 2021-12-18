@@ -1,7 +1,7 @@
 var arr = JSON.parse(localStorage.getItem('UserDatabase')) || [];
 
 var save = document.querySelector(".save").addEventListener("click",saveData);
-var orderArr = JSON.parse(localStorage.getItem('orderDatabase')) || [];
+var orderArr = JSON.parse(localStorage.getItem('orderDatabase'));
 
 function saveData(){
     var uName = document.querySelector('.name').value;
