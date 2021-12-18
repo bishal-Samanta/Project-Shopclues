@@ -247,7 +247,7 @@ body {
 #maincontainerdiv > div:nth-child(3) {
   border-radius: 7px;
   border: 1px solid transparent;
-  padding-bottom: 0px;
+  padding-bottom: 80px;
 }
 
 /* basic layouit  end */
