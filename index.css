@@ -192,6 +192,36 @@ button {
   margin-right: 0px;
   margin-top: 2px;
 }
+.TimeSales_Nav {
+  margin-top: 0px;
+  height: 30px;
+  width: 100%;
+  background-color: white;
+  line-height: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.TimeSales_Nav>ul {
+  list-style: none;
+  display: inline-flex;
+  margin-top: 0px;
+  height: 38px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.TimeSales_Nav>ul>li {
+  /* border:1px solid black; */
+  font-size: 13px;
+  padding: 15px;
+  height: 19px;
+  cursor: pointer;
+  color: #24a3b5
+}
 
 /* Header - End */
 
@@ -207,7 +237,7 @@ body {
 /* Main-Content-Body-Div-Start */
 #mainbodydiv {
   background-color: #eef6fa;
-  padding-top: 140px;
+  padding-top: 170px;
   width: 100%;
   min-width: 1500px;
   padding-bottom: 40px;
@@ -575,3 +605,4 @@ footer > div:nth-child(7) > img {
   margin-right: 0;
 }
 /*footer section css ends here*/
+/* ----------------------------------------------------- */
