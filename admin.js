@@ -31,6 +31,8 @@ function clicksubmitfunction(event) {
 
   var prodprice = prodmrp - (prodmrp * proddiscount) / 100;
 
+  prodprice = Math.floor(prodprice);
+
   var obj = {
     name: prodname,
     imgURL: prodimage,

@@ -288,24 +288,7 @@ function backTo(){
 
 //order database function
 
-var userCheck = localStorage.getItem("system");
-place.addEventListener('click',placeOrder);
-var orderArr = [];
-console.log(orderArr);
 
-function placeOrder(){
-    if(userCheck != "online"){
-        window.location.href = "login.html";
-    }
-    else{
-        if(data.length == 0){
-            alert("Please add product to cart.");
-        }
-        else{
-            order();
-        }
-    }
-}
 
 function order(){
     var productArr = [];
@@ -340,6 +323,65 @@ function order(){
     localStorage.setItem("orderDatabase",JSON.stringify(orderArr));
     window.location.href = "./address.html";
     console.log(orderArr);
+}
+
+
+function order1(){
+    var productArr = [];
+    var productSize = [];
+    var productColor = [];
+    data.map(function(ele){
+        productArr.push(ele.name);
+        productSize.push(ele.size);
+        productColor.push(ele.color_family);
+    })
+
+    var productQuantity = [];
+    var pD = document.getElementsByClassName("pD");
+    for(var i=0; i<pD.length; i++){
+        var cartRow = pD[i];
+        var quantityElement = cartRow.getElementsByClassName("quantity")[0];
+        var quantity = parseInt(quantityElement.innerText);
+        productQuantity.push(quantity);
+    }
+    
+    var gT = document.querySelector(".gTotal");
+    gT = gT.innerHTML.replace("Grand Total : Rs ","");
+    var g = parseInt(gT);
+    var orderObj = {
+        product_List : productArr,
+        product_quantity_List : productQuantity,
+        product_size_List : productSize,
+        product_color_List : productColor,
+        total_Price : g,
+    };
+    orderArr.push(orderObj);
+    localStorage.setItem("orderDatabase",JSON.stringify(orderArr));
+    // window.location.href = "./address.html";
+    console.log(orderArr);
+}
+
+
+
+
+var userCheck = localStorage.getItem("system");
+place.addEventListener('click',placeOrder);
+var orderArr = [];
+console.log(orderArr);
+
+function placeOrder(){
+    if(userCheck != "online"){
+        order1();
+        window.location.href = "login1.html";
+    }
+    else{
+        if(data.length == 0){
+            alert("Please add product to cart.");
+        }
+        else{
+            order();
+        }
+    }
 }
 
 
