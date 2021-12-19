@@ -40,7 +40,7 @@ AllArr.map(function(elem){
     image_bot_3.setAttribute("src", "https://cdn.shopclues.com/images1/detailed/109145/150573840-109145407-1597763801.jpg")
     document.querySelector("#MRP").textContent = elem.mrp;
     document.querySelector("#Discount").textContent = elem.discount;
-    var rP = elem.price + 26;
+    var rP = elem.price + 36;
     document.querySelector("#remPrice").textContent = rP;
     document.querySelector("#rPrice").textContent = rP;
     var dealpp = document.querySelectorAll("#DealPrice")
