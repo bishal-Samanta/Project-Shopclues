@@ -210,7 +210,7 @@ function creditDetails(){
     var cname = UserDatabase[0].fullName;
 
     function checkPay(){
-        if(cardNumber.value == "1111 2222 3333 4444" && cardMonth.value == "12" && cardYear.value == "22" && cardCvv.value == "1234" && cardName.value == cname){
+        if(cardNumber.value == "1111 2222 3333 4444" && cardMonth.value == "12" && cardYear.value == "22" && cardCvv.value == "123" && cardName.value == cname){
             window.location.href = "paymentotp.html";
         }
         else{
