@@ -4,7 +4,7 @@
 
 A one week project for cloning the **Shopclues.com** website.
 
-< ![Shopclues-webite](https://user-images.githubusercontent.com/60615344/159124244-7bb7dd9b-d249-4f9b-b5b2-727545399b3d.png)>
+![Shopclues-webite](https://user-images.githubusercontent.com/60615344/159124244-7bb7dd9b-d249-4f9b-b5b2-727545399b3d.png)
 
 ## Contributors
 
